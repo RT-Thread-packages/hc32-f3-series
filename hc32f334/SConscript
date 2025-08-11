@@ -35,8 +35,8 @@ if GetDepend(['RT_USING_I2C']):
 if GetDepend(['RT_USING_SPI']):
     src += ['src/hc32_ll_spi.c']
 
-if GetDepend(['RT_USING_MCAN']):
-    src += ['src/hc32_ll_can.c']
+if GetDepend(['RT_USING_CAN']):
+    src += ['src/hc32_ll_mcan.c']
 
 if GetDepend(['RT_USING_ADC']):
     src += ['src/hc32_ll_adc.c']
